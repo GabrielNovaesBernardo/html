@@ -7,7 +7,10 @@
     <title>Document</title>
     <!-- stilizacao das margens das tabelas -->
     <style>
-        body{background-color: beige;}
+        body{
+            
+            background-color: beige;
+        }
         table, th, td{
             border: 1px solid black;
         }
@@ -104,28 +107,52 @@
 
 <br><br><br>
     <footer>
-        <h3>realizando cadastros</h3>
+        
         <form action="cadastro.js">
-            <b>digite seu nome</b> <br>
-            <input type="text" name="nome do aluno">
-
-            <h3>aulno na unipar?</h3>
-            <input type="radio" name="ALUNO" value="ALUNO=NAO"><b>SIM</b><br>
-            <input type="radio" name="ALUNO" value="ALUNO=NAO"><b>NAO</b>
-            <h3>O QUE VOCE FAZ NAS HORAS VAGAS</h3>
-            <input type="checkbox"><B>DORMIR</B><br>
-            <input type="checkbox"><b>jogar LOL</b><br>
-            <input type="checkbox"><b>chorar pensando na prova</b><br>
+            <fieldset style=" 
+                background-color:aliceblue;
+                background-position-x: left;">
+                <legend>realizando cadastros</legend>
+                <b>digite seu nome</b> <br>
+                <input type="text" name="nome do aluno">
+                <h3>aulno na unipar?</h3>
+                <input type="radio" name="ALUNO" value="ALUNO=NAO"><b>SIM</b><br>
+                <input type="radio" name="ALUNO" value="ALUNO=NAO"><b>NAO</b>
+                <h3>O QUE VOCE FAZ NAS HORAS VAGAS</h3>
+                <input type="checkbox"><B>DORMIR</B><br>
+                <input type="checkbox"><b>jogar LOL</b><br>
+                <input type="checkbox"><b>chorar pensando na prova</b>
+                <BR>
+                insira seu melhor email <br>
+                <input type="email">
+                <br>
+                
+                
+                <br> Por ultimo nos diga você tem inteção de trabalhar em que área? <br>
+                <select name="area de atuação">
+                    <option value="front end">front end</option>
+                    <option value="back end">back end</option>
+                    <option value="full stack">full stack</option>
+                    <option value="desenvolvedor de jogos">desenvolvedor de jogos</option>
+                    <option value="cyber segurança">cyber segurança</option>
+                    <option value="professor">professor</option>
+                    
+                </select><br>
+                <br><b>nascimento</b><br>
+                <input type="date"><br>
+                <br><input type="submit"> <input type="reset">
+                
+            </fieldset>
             
-            <BR>
-            <H3>O que te motivou a entrar na faculdade de ADS ?</H3>
-            <textarea name="BLOCKTEXT" id="123" cols="30" rows="10"></textarea>
-
-
-
-            <br><br>
-            <input type="submit">
         </form>
+        <H3>O que te motivou a entrar na faculdade de ADS ?</H3>
+        <textarea name="texbblock" id="123" cols="30" rows="10">escreva aqui</textarea>
+        <br><input type="submit" value="registrar">
+
     </footer>
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maxime, inventore cupiditate at ex quos, dolorem obcaecati aliquam recusandae repellendus sint in asperiores enim ab corporis eos nulla, aliquid impedit.
+
 </body>
 </html>
