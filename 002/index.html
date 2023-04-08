@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ex002</title>
     <!-- stilizacao das margens das tabelas -->
     <style>
-        body{background-color: beige;}
+        body{background-color: beige;
+            border: 2px solid black;
+        }
         table, th, td{
             border: 1px solid black;
         }
@@ -104,27 +106,43 @@
 
 <br><br><br>
     <footer>
-        <h3>realizando cadastros</h3>
+        
         <form action="cadastro.js">
-            <b>digite seu nome</b> <br>
-            <input type="text" name="nome do aluno">
-
-            <h3>aulno na unipar?</h3>
-            <input type="radio" name="ALUNO" value="ALUNO=NAO"><b>SIM</b><br>
-            <input type="radio" name="ALUNO" value="ALUNO=NAO"><b>NAO</b>
-            <h3>O QUE VOCE FAZ NAS HORAS VAGAS</h3>
-            <input type="checkbox"><B>DORMIR</B><br>
-            <input type="checkbox"><b>jogar LOL</b><br>
-            <input type="checkbox"><b>chorar pensando na prova</b><br>
-            
-            <BR>
-            <H3>O que te motivou a entrar na faculdade de ADS ?</H3>
-            <textarea name="BLOCKTEXT" id="123" cols="30" rows="10"></textarea>
-
-
-
-            <br><br>
-            <input type="submit">
+            <fieldset>
+                <legend>realizando cadastros</legend>
+                <b>digite seu nome</b> <br>
+                <input type="text" name="nome do aluno">
+                <h3>aulno na unipar?</h3>
+                <input type="radio" name="ALUNO" value="ALUNO=NAO"><b>SIM</b><br>
+                <input type="radio" name="ALUNO" value="ALUNO=NAO"><b>NAO</b>
+                <h3>O QUE VOCE FAZ NAS HORAS VAGAS</h3>
+                <input type="checkbox"><B>DORMIR</B><br>
+                <input type="checkbox"><b>jogar LOL</b><br>
+                <input type="checkbox"><b>chorar pensando na prova</b><br>
+                
+                <BR>
+                <H3>O que te motivou a entrar na faculdade de ADS ?</H3>
+                <textarea name="BLOCKTEXT" id="123" cols="30" rows="10"></textarea>
+                <br><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+<br><br>
+        <form>
+            <fieldset style="background-color: rgb(81, 147, 204);">
+                <p style="color: rgb(0, 35, 115);"><b>INSIRA SEU EMAIL</b></p> <br>
+                <input type="email"><br><br>
+                <input type="password"><br><br>
+                <input type="submit" value="login">
+            </fieldset>
+        </form>
+<br><br>
+        <form>
+            <fieldset style="background-color: coral; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(1, 5, 3);">
+                <input type="date"><br><br>
+                <input type="number">
+                <input type="submit" value="consultar">
+            </fieldset>
         </form>
     </footer>
 </body>
